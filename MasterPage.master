@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage"%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="InfSumo" content=" " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfSumo</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 50px;
+        }
+        </style>
+    <link/ rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css"/>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            $('#Titulo').hover(function () {
+                $('#Titulo').effect('bounce', { times: 1 }, 250);
+            });
+        });
+    </script>
+    <form id="form1" runat="server">
+    <header id="Encabezado">
+        <a href="Principal.aspx" style="text-decoration:none; width:55px;"><h1 id="Titulo">InfSumo</h1></a>
+        <a href="Carrito.aspx" class="Carrito"><asp:ImageButton ID="Carrito" runat="server" ImageUrl="~/carrito.png" OnClick="Carrito_Click" CssClass="Carrito"/></a>
+        <asp:Label ID="lbCliente" runat="server" CssClass="Cliente" OnPreRender="lbCLiente_PreRender"></asp:Label>
+        <a href="Carrito.aspx" class="Carrito"><asp:Label ID="lbCarrito" runat="server" Text="" OnLoad="lbCarrito_Load" OnPreRender="lbCarrito_PreRender"></asp:Label></a>
+        <asp:LinkButton ID="lkAdmin" runat="server" CssClass="lnkAdmin" Visible="False" OnClick="lkAdmin_Click">Volver a admin</asp:LinkButton>
+    </header>
+    <div>
+        <div align="center" style="background-color:white; height:60px">
+            <table class="auto-style1">
+                <tr>
+                    <td class="TablasMenu">
+                        <ul class="nav"><li><a href="Principal.aspx" class="MenuButtons">Home</a></li></ul>
+                    </td>
+                    <td>
+                        <ul class="nav">
+                            <li><a href="Productos.aspx" class="MenuButtons">Productos</a>
+                                <ul>
+                                    <li><a class="MenuButtons" href="Procesadores.aspx">Procesadores</a></li>
+                                    <li><a class="MenuButtons" href="Motherboards.aspx">Motherboards</a></li>
+                                    <li><a class="MenuButtons" href="Componentes.aspx">Componentes</a></li>
+                                    <li><a class="MenuButtons" href="Accesorios.aspx">Accesorios</a></li>
+                                    <li><a class="MenuButtons" href="Otros.aspx">Otros</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="TablasMenu"><ul class="nav"><li><a href="Contacto.aspx" class="MenuButtons">Contacto</a></li></ul></td>
+                    <td class="TablasMenu"><ul class="nav"><li><a href="Empresa.aspx" class="MenuButtons">Que soy?</a></li></ul></td>
+                    <td class="TablasMenu"><ul class="nav"><li><a href="Login.aspx" class="MenuButtons">Login</a></li></ul></td>
+                </tr>
+            </table>
+            <br />
+        </div>
+        <div style="height:800px">
+            <div style="float:left; background-color:rgba(27, 97, 149, 0.73); width:20%; height: 100%;background:linear-gradient(to top,white,rgba(27, 97, 149, 0.73))">
+                <asp:ContentPlaceHolder id="ContenerdorVerde" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div style="float:right; width:80%; height: 100%;">
+                <asp:ContentPlaceHolder id="ContenedorRojo" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+        
+    </form>
+    <footer>
+        <div id="footer">
+                <p class="right">&copy; 2015 InfSumo. Design by Martin Kluck</p>
+            </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,357 @@
+﻿body {
+    background-color:#fff;
+}
+
+.Login{
+    color: #000000;
+    font-size:36px;
+}
+td{
+    height:50px;
+    padding: 0;
+    margin: 0;
+    width:20%;
+    -ms-align-content:flex-start;
+    -webkit-align-content:flex-start;
+    align-content:flex-start;
+}
+
+li{
+    width:100%;
+}
+
+.BotonesLogin{
+    text-decoration:none;
+    color:#000000;
+    border-radius:10px;
+}
+
+.MenuButtons{
+    color: #4d9bd4;
+    font-size:40px;
+    font-family:Verdana;
+    background-color:#fff;
+    text-decoration:none;
+    text-align:center;
+    width: auto;
+    -ms-align-content:center;
+    -webkit-align-content:center;
+    align-content:center;
+}
+
+.TablasMenu{
+    height:50px;
+    width: 20%;
+    -ms-align-content:flex-start;
+    -webkit-align-content:flex-start;
+    align-content:flex-start;
+}
+
+.TablasMenu:hover{
+    background-color:#88b5d1;
+    color:#FFF;
+}
+
+.MenuButtons:hover{
+    background-color:#88b5d1;
+    color:#FFF;
+}
+
+#Titulo{
+    position:relative; 
+    left:60px;
+    top:50px;
+    padding:8px;
+    font-size:60px; 
+    width:220px; 
+    border:2px solid white; 
+    -moz-border-radius:4px 5px;
+    -webkit-border-radius:4px 5px;
+    border-radius:4px 5px;
+}
+
+.Tablas{
+    text-align:center;
+    text-decoration:none;
+    color:white;
+    background-color:#88b5d1;
+    margin:5px 5px 5px 5px;
+}
+
+#Encabezado{
+    background-color:#88b5d1;
+    width: 100%;
+    height: 200px;
+    -ms-align-content:flex-start;
+    -webkit-align-content:flex-start;
+    align-content:flex-start;
+    background: linear-gradient(to left,#fff,#88b5d1);
+}
+h1{
+    color:#FFF;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    margin:auto;
+    width: 500px;
+    font-family:Arial, Helvetica, sans-serif;
+}          
+ul, ol{
+    list-style: none;
+    width: 250px;
+    height: 50px;
+}
+.nav li a {
+    background-color: #fff;
+    color: #4d9bd4;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: #88b5d1;
+    color:#FFF;
+}
+.nav > li{
+    float:left;
+    width: 100%;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul{
+    right: 160px;
+    top: 0px;
+}
+
+.nav{
+    margin:0px 0px 0px 0px;
+    width:auto;
+}
+
+a{
+    -ms-align-content:center;
+    -webkit-align-content:center;
+    align-content:center;
+}
+
+#Carrito{
+    width:60px;
+    height:60px;
+    top: -9px;
+    right: -47px;
+    text-decoration: none;
+}
+
+#grdCarrito{
+    width:auto;
+    height:auto;
+    margin: 10px 10px 10px 10px;
+    color: #000000;
+    background-color:rgba(77, 155, 212, 0.69);
+    top: 30px;
+    right: 30px;
+    text-decoration: none;
+    font-size:24px;
+}
+
+#lnkEjecutarCompra{
+    text-decoration:none;
+    color:#000000;
+    background-color:rgba(77, 155, 212, 0.69);
+    border-bottom-color:#4d9bd4;
+    border-color:#4d9bd4;
+    border-radius:5px;
+    font-size:36px;
+}
+
+.Carrito{
+    text-decoration:none;
+    position:absolute;
+    top:80px;
+    right:103px;
+    width:161px;
+    height:48px;
+    text-align:center;
+    color:#000000;
+    font-size:30px;
+    text-anchor:middle;
+    bottom: 193px;
+}
+
+.Label1{
+    text-decoration:none;
+    font-size:30px;
+}
+
+
+/*Contacto*/
+
+.c240 {
+  width: 271px;
+  padding: 0 0 0 10px;
+  margin-top: 20px;
+}
+.col {
+  float: left;
+    height: 146px;
+}
+
+.info_cont .telefono {
+  background: url(/img_cont_tel.png) no-repeat top left;
+}
+.info_cont div {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 70px;
+  min-height: 66px;
+}
+
+.info_cont .email_web {
+  background: url(/img_cont_web.png) no-repeat top left;
+}
+
+#Contacto {
+    position:absolute;
+    display:inline;
+    -ms-align-content:center;
+    -webkit-align-content:center;
+    align-content:center;
+}
+
+/*Quien soy?*/
+
+#Quiensoy{
+    margin: 30px 20px 30px 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: #4d9bd4;
+}
+
+#Quiensoy h3 {
+    color: #ffffff;
+    font-size: 48px;
+}
+
+#Quiensoy p {
+    color:#fff;
+    font-size:36px;
+}
+
+/*Pie de pagina*/
+
+#footer {
+    height: 51px;
+    background: none repeat scroll 0% 0% #EBEBEB;
+    white-space: nowrap;
+    line-height: 50px;
+    padding: 0px 15px;
+    color: #7B7B7B;
+    margin-top: 10px;
+}
+
+.BotonesTablas{
+    color: #88b5d1;
+    font-size:xx-large;
+    font-family:Verdana;
+    background-color:#fff;
+    text-decoration:none;
+    text-align:center;
+    width: auto;
+    -ms-align-content:center;
+    -webkit-align-content:center;
+    align-content:center;
+}
+
+.BotonesTablas:hover{
+    background-color:#88b5d1;
+    color:#fff;
+}
+
+.Indice:hover{
+    background-color:#88b5d1;
+    color:#fff;
+}
+
+#Cabecera{
+    text-decoration: none;
+    color: #88b5d1;
+    background-color:#fff;
+    font-size:36px;
+}
+
+.Cliente{
+    text-decoration:none;
+    position:absolute;
+    top:20px;
+    right:65px;
+    width:560px;
+    height:32px;
+    text-align:center;
+    color:#000000;
+    font-size:30px;
+    text-anchor:middle;
+    display:inline;
+    bottom: 269px;
+    text-align:right;
+}
+
+.lable {
+    text-decoration:none;
+    font-size:36px;
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+.form {
+    margin:0 auto;
+    width:400px;
+}
+ 
+.input, .textarea {
+    width:380px;
+    height:27px;
+    background:#88b5d1;
+    border:2px solid #f6f6f6;
+    padding:10px;
+    margin-top:5px;
+    font-size:24px;
+    color:#ffffff;
+}
+ 
+.textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.lnkAdmin{
+    text-decoration:none;
+    color:#000000;
+    position:absolute;
+    font-size:36px;
+    top: 146px;
+    right: 32px;
+}
